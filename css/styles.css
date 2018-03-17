@@ -1,0 +1,56 @@
+/* General rules */
+
+body {
+  font-family: "Lobster", cursive;
+  background-color: azure;
+}
+
+/* Header */
+
+h1 {
+  text-align: center;
+  font-size: 48px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.stars {
+  display: flex;
+  align-items: baseline;
+}
+
+/* Main */
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+.board {
+  width: 650px;
+  height: 650px;
+  background-color: rgba(9, 224, 231, 0.075);
+  display: flex;
+  flex-wrap: wrap;
+  color: #c62828;
+}
+
+.card {
+  width: calc((650px - 40px) / 4);
+  height: calc((650px - 40px) / 4);
+  margin: 5px;
+  background-color: #c62828;
+}
+
+/* Media querries */
+
+@media screen and (max-width: 670px) {
+  .card {
+    width: 23%;
+    margin: 1%;
+  }
+}
